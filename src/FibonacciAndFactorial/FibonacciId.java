@@ -1,9 +1,10 @@
-import Exception.invalidDataException;
+package FibonacciAndFactorial;
+
+import Exception.InvalidDataException;
 
 public class FibonacciId{
 
     private FibonacciId(){
-
     }
 
     public static int[] fibonacciLoopType(int loopType, int n) {
@@ -19,7 +20,7 @@ public class FibonacciId{
                 num = FibonacciId.operationDoWhileFibonacci(n);
                 break;
             default:
-                new invalidDataException("Введите от 1 до 3");
+                new InvalidDataException("Введите от 1 до 3");
         }
         return num;
     }

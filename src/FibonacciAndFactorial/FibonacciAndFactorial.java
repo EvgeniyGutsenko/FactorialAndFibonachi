@@ -1,9 +1,10 @@
-import Exception.invalidDataException;
+package FibonacciAndFactorial;
 
+import Exception.InvalidDataException;
 
 public class FibonacciAndFactorial {
 
-    protected FibonacciAndFactorial() {
+    private FibonacciAndFactorial() {
     }
 
     public static int[] doOperation(int algorithmId, int loopType, int n) {
@@ -18,7 +19,7 @@ public class FibonacciAndFactorial {
                 num = FibonacciId.fibonacciLoopType(loopType,n);
                 break;
             default:
-                new invalidDataException("Не верно введен тип операции");
+                new InvalidDataException("Не верно введен тип операции");
         }
         return num;
         }

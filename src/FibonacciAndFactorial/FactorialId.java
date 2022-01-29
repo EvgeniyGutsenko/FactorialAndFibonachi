@@ -1,9 +1,10 @@
-import Exception.invalidDataException;
+package FibonacciAndFactorial;
+
+import Exception.InvalidDataException;
 
 public class FactorialId{
 
     private FactorialId(){
-
     }
 
     public static int[] factorialLoopType(int loopType, int n){
@@ -19,7 +20,7 @@ public class FactorialId{
                 num = FactorialId.operationDoWhileFactorial(n);
                 break;
             default:
-                new invalidDataException("Введите от 1 до 3");
+                new InvalidDataException("Введите от 1 до 3");
         }
         return num;
     }
